@@ -19,12 +19,13 @@ Usage
 
 ```hcl
 module "vpc_demo" {
-  source      = "git@github.com:stack42/terraform_aws_vpc_public/"
+  source      = "github.com/stack42/terraform_aws_vpc_public/"
   cidr_block  = "10.0.0.0/16"
   aws_region  = "eu-west-1"
   az_count    = "3"
   name        = "test"
   environment = "dev"
+}
 }
 ```
 
