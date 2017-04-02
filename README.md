@@ -26,7 +26,6 @@ module "vpc_demo" {
   name        = "test"
   environment = "dev"
 }
-}
 ```
 
 
