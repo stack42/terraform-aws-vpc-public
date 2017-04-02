@@ -1,6 +1,3 @@
-provider "aws" {
-  region     = "${var.aws_region}"
-}
 
 data "aws_availability_zones" "available" {}
 
@@ -11,7 +8,7 @@ resource "aws_vpc" "vpc" {
 
   tags {
       Name        = "${var.name}"
-      Environment = "${var.environment}"
+      terraform = "true"
       }
 
 }
@@ -25,7 +22,7 @@ resource "aws_subnet" "network" {
 
   tags {
       Name        = "${var.name}"
-      Environment = "${var.environment}"
+      terraform = "true"
       }
 }
 
@@ -34,7 +31,7 @@ resource "aws_internet_gateway" "network" {
 
   tags {
       Name        = "${var.name}"
-      Environment = "${var.environment}"
+      terraform = "true"
       }
 }
 
@@ -48,7 +45,7 @@ resource "aws_route_table" "network" {
 
   tags {
       Name        = "${var.name}"
-      Environment = "${var.environment}"
+      terraform = "true"
       }
 }
 

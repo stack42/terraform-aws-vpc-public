@@ -4,9 +4,9 @@ variable "az_count" {}
 
 variable "name" {}
 
-variable "aws_region" {}
+/*variable "aws_region" {}
 
-variable "environment" {}
+variable "environment" {}*/
 
 variable "enable_dns_hostnames" {
   default = "true"

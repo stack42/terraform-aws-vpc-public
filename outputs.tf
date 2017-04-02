@@ -9,7 +9,3 @@ output "vpc_id" {
 output "cidr_block" {
   value = "${var.cidr_block}"
 }
-
-output "aws_region" {
-  value = "${var.aws_region}"
-}
