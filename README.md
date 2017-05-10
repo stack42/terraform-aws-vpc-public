@@ -34,8 +34,8 @@ module "vpc_demo" {
   source      = "github.com/stack42/terraform_aws_vpc_public/"
   cidr_block  = "10.0.0.0/16"
   az_count    = "3"
-  name        = "test"
-  environment = "dev"
+  name        = "${var.name}"
+  environment = "${var.environment}"
 }
 ```
 
