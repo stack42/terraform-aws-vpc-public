@@ -16,12 +16,23 @@ Module Input Variables
 
 Usage
 -----
-
 ```hcl
+variable "name" {
+  default = "demo"
+}
+variable "environment" {
+  default = "demo"
+}
+variable "aws_region" {
+  default = "us-east-2"
+}
+provider "aws" {
+    region = "${var.aws_region}"
+}
+
 module "vpc_demo" {
   source      = "github.com/stack42/terraform_aws_vpc_public/"
   cidr_block  = "10.0.0.0/16"
-  aws_region  = "eu-west-1"
   az_count    = "3"
   name        = "test"
   environment = "dev"

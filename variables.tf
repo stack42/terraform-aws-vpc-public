@@ -6,7 +6,7 @@ variable "name" {}
 
 variable "environment" {}
 
-variable "aws_region" {}
+#variable "aws_region" {}
 
 variable "enable_dns_hostnames" {
   default = "true"
