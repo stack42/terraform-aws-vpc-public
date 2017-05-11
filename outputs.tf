@@ -3,7 +3,7 @@ output "public_subnets" {
 }
 
 output "vpc_id" {
-  value = "${aws_vpc.vpc.id}"
+  value = "${module.aws_vpc.vpc.id}"
 }
 
 output "cidr_block" {
