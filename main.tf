@@ -20,6 +20,7 @@ resource "aws_subnet" "public_subnet" {
   tags {
     Name        = "${var.name}"
     Environment = "${var.environment}"
+    Tier        = "Public"
     terraform   = "true"
   }
 }
