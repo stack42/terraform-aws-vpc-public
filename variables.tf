@@ -4,8 +4,6 @@ variable "az_count" {}
 
 variable "name" {}
 
-variable "environment" {}
-
 variable "region" {}
 
 variable "enable_dns_hostnames" {
